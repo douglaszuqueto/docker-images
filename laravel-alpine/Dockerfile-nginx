@@ -1,6 +1,0 @@
-FROM nginx:stable-alpine
-
-WORKDIR /app
-
-COPY nginx/default.conf /etc/nginx/conf.d
-COPY nginx/nginx.conf /etc/nginx
