@@ -1,3 +1,5 @@
 FROM alpine
 
-RUN apk update && apk add --no-cache ca-certificates && rm -rf /var/cache/apk/*
+ENV TZ=America/Sao_Paulo
+
+RUN apk update && apk add --no-cache tzdata ca-certificates && rm -rf /var/cache/apk/*
